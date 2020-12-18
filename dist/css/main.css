@@ -340,7 +340,7 @@ template {
     @media only screen and (max-width: 479px) {
       .started .container .row {
         padding-top: 50px; } }
-    @media only screen and (max-width: 399px) {
+    @media only screen and (min-width: 400px) {
       .started .container .row {
         padding-top: 40px; } }
     @media only screen and (max-width: 399px) {
@@ -797,6 +797,10 @@ template {
           .plan .container .row .col-md-4 .card-one {
             width: 350px;
             height: 800px; } }
+        @media only screen and (max-width: 399px) {
+          .plan .container .row .col-md-4 .card-one {
+            width: 300px;
+            height: 750px; } }
         .plan .container .row .col-md-4 .card-one:hover {
           border: 2px solid #F53838; }
         @media only screen and (max-width: 1023px) {
@@ -906,6 +910,10 @@ template {
           .plan .container .row .col-md-4 .card-two {
             width: 350px;
             height: 800px; } }
+        @media only screen and (max-width: 399px) {
+          .plan .container .row .col-md-4 .card-two {
+            width: 300px;
+            height: 750px; } }
         .plan .container .row .col-md-4 .card-two:hover {
           border: 2px solid #F53838; }
         @media only screen and (max-width: 1023px) {
@@ -1017,6 +1025,10 @@ template {
           .plan .container .row .col-md-4 .card-three {
             width: 350px;
             height: 800px; } }
+        @media only screen and (max-width: 399px) {
+          .plan .container .row .col-md-4 .card-three {
+            width: 300px;
+            height: 750px; } }
         .plan .container .row .col-md-4 .card-three:hover {
           border: 2px solid #F53838; }
         @media only screen and (max-width: 1023px) {
@@ -1166,7 +1178,7 @@ template {
   .customer .container-fluid {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 40px;
     position: relative; }
     @media only screen and (max-width: 639px) {
@@ -1224,6 +1236,15 @@ template {
         .customer .slide .card-slide {
           margin-left: 0px;
           margin-right: 0px; } }
+      @media only screen and (max-width: 399px) {
+        .customer .slide .card-slide {
+          width: 315px;
+          height: 250px; } }
+      @media only screen and (min-width: 400px) {
+        .customer .slide .card-slide {
+          width: 300px;
+          height: 230px;
+          margin-left: 10px; } }
       .customer .slide .card-slide .slide-top {
         display: flex;
         justify-content: space-between;
@@ -1330,6 +1351,9 @@ template {
     width: 100%;
     position: relative;
     margin-top: 70px; }
+    @media only screen and (max-width: 399px) {
+      .customer .container {
+        margin-top: 36px; } }
     .customer .container .row {
       display: flex;
       position: absolute;
@@ -1373,6 +1397,10 @@ template {
       @media only screen and (max-width: 479px) {
         .customer .container .row {
           width: 380px; } }
+      @media only screen and (max-width: 399px) {
+        .customer .container .row {
+          width: 320px;
+          height: 260px; } }
       .customer .container .row .col-md-6 {
         padding: 50px 70px; }
         @media only screen and (max-width: 1439px) {
@@ -1407,6 +1435,9 @@ template {
             .customer .container .row .col-md-6 h1 {
               font-size: 24px;
               line-height: 32px; } }
+          @media only screen and (max-width: 399px) {
+            .customer .container .row .col-md-6 h1 {
+              text-align: center; } }
         .customer .container .row .col-md-6 p {
           font-weight: normal;
           font-size: 16px;
@@ -1414,6 +1445,9 @@ template {
           display: flex;
           align-items: center;
           color: #4F5665; }
+          @media only screen and (max-width: 399px) {
+            .customer .container .row .col-md-6 p {
+              text-align: center; } }
         .customer .container .row .col-md-6 .btn-now {
           float: right;
           padding: 18px 65px;
@@ -1439,6 +1473,11 @@ template {
           @media only screen and (max-width: 479px) {
             .customer .container .row .col-md-6 .btn-now {
               padding: 15px 30px; } }
+          @media only screen and (max-width: 399px) {
+            .customer .container .row .col-md-6 .btn-now {
+              padding: 12px 17px;
+              display: block;
+              margin-right: 60px; } }
         .customer .container .row .col-md-6 img {
           position: absolute;
           top: 20px;
@@ -1605,6 +1644,15 @@ template {
             font-size: 15px;
             line-height: 24px; } }
 
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1000; }
+
 header.navbar {
   margin: 0;
   padding: 0;
@@ -1712,6 +1760,9 @@ header.navbar {
   transform: rotate(0deg);
   transition: .25s ease-in-out;
   color: #F53855; }
+  @media only screen and (max-width: 1439px) {
+    #nav-icon1 span {
+      opacity: 0; } }
   @media only screen and (max-width: 1023px) {
     #nav-icon1 span {
       opacity: 1; } }

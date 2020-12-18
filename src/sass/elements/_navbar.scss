@@ -118,8 +118,7 @@ header.navbar{
     z-index: 5;
     @include mq('desktop-wide', max){
     }
-    @include mq('desktop-wide', max){
-    }
+    
     @include mq('tablet-wide', max){
         opacity: 1;
     }
@@ -147,6 +146,9 @@ header.navbar{
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
     color: #F53855;
+    @include mq('desktop-wide', max){
+      opacity: 0;
+    }
     @include mq('tablet-wide', max){
       opacity: 1;
     }

@@ -12,7 +12,7 @@
               @include mq('phone-wide', max){
                 padding-top: 50px;
             }
-              @include mq('phone', max){
+              @include mq('phone', min){
                   padding-top: 40px;
               }
               .col-md-6:nth-child(1){
@@ -536,6 +536,11 @@ background: linear-gradient(-180deg, rgba(233,233,233,1) 0%, rgba(246,243,243,1)
                         width: 350px;
                         height: 800px;
                     }
+                    @include mq('phone', max){
+                        width: 300px;
+                        height: 750px;
+                    }
+
 
 
                 
@@ -663,6 +668,10 @@ background: linear-gradient(-180deg, rgba(233,233,233,1) 0%, rgba(246,243,243,1)
                         width: 350px;
                         height: 800px;
                     }
+                    @include mq('phone', max){
+                        width: 300px;
+                        height: 750px;
+                    }
 
                     &:hover{
                         border: 2px solid #F53838;
@@ -789,6 +798,10 @@ background: linear-gradient(-180deg, rgba(233,233,233,1) 0%, rgba(246,243,243,1)
                         @include mq('phone-wide', max){
                             width: 350px;
                             height: 800px;
+                        }
+                        @include mq('phone', max){
+                            width: 300px;
+                            height: 750px;
                         }
                         &:hover{
                             border: 2px solid #F53838;
@@ -972,7 +985,7 @@ background: linear-gradient(-180deg, rgba(233,233,233,1) 0%, rgba(246,243,243,1)
     .container-fluid{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin-top: 40px;
         position: relative;
         @include mq('tablet-small', max){
@@ -1039,6 +1052,15 @@ background: linear-gradient(-180deg, rgba(233,233,233,1) 0%, rgba(246,243,243,1)
             @include mq('tablet-small', max){
                 margin-left: 0px;
                 margin-right: 0px;
+            }
+            @include mq('phone', max){
+                width: 315px;
+                height: 250px;
+            }
+            @include mq('phone', min){
+                width: 300px;
+                height: 230px;
+                margin-left: 10px;
             }
             .slide-top{
                 display: flex;
@@ -1176,6 +1198,9 @@ background: linear-gradient(-180deg, rgba(233,233,233,1) 0%, rgba(246,243,243,1)
         width: 100%;
         position: relative;
         margin-top: 70px;
+        @include mq('phone', max){
+            margin-top: 36px;
+        }
         .row{
             display: flex;
             position: absolute;
@@ -1219,6 +1244,10 @@ background: linear-gradient(-180deg, rgba(233,233,233,1) 0%, rgba(246,243,243,1)
             @include mq('phone-wide', max){
                 width: 380px;
             }
+            @include mq('phone', max){
+                width: 320px;
+                height: 260px;
+            }
             
             .col-md-6{
                 padding: 50px 70px;
@@ -1256,6 +1285,10 @@ background: linear-gradient(-180deg, rgba(233,233,233,1) 0%, rgba(246,243,243,1)
                         font-size: 24px;
                     line-height: 32px;
                     }
+                    @include mq('phone', max){
+                        text-align: center;
+                    }
+                    
                 }
                 p{
                     font-weight: normal;
@@ -1264,6 +1297,9 @@ background: linear-gradient(-180deg, rgba(233,233,233,1) 0%, rgba(246,243,243,1)
                     display: flex;
                     align-items: center;
                     color: #4F5665;
+                    @include mq('phone', max){
+                        text-align: center;
+                    }
                 }
                 .btn-now{
                     float: right;
@@ -1289,6 +1325,11 @@ background: linear-gradient(-180deg, rgba(233,233,233,1) 0%, rgba(246,243,243,1)
                     }
                     @include mq('phone-wide', max){
                         padding: 15px 30px;
+                    }
+                    @include mq('phone', max){
+                        padding: 12px 17px;
+                        display: block;
+                        margin-right: 60px;
                     }
                 }
                 img{
@@ -1494,4 +1535,13 @@ background: linear-gradient(-180deg, rgba(233,233,233,1) 0%, rgba(246,243,243,1)
         }
     }
   }
+}
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1000;
 }
